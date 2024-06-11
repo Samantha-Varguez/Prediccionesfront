@@ -1,0 +1,27 @@
+.evaluation-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente */
+    margin-top: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 60vh;
+}

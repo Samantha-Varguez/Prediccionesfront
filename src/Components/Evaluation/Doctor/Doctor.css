@@ -1,0 +1,87 @@
+.doctor-container {
+    position: absolute; /* Para permitir el uso de top y left */
+    display: flex;
+    align-items: center;
+    padding: 19px;
+    width: 29rem;
+    height: 7rem;
+    background-color: white;
+    top: 130%;
+    left: 7%;
+
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #F9C97C, #A2E9C1);
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .doctor-avatar:hover {
+    background: linear-gradient(to right, #C9A9E9, #7EE7FC);
+    transform: scale(1.1);
+  }
+  
+  .avatar-icon {
+    width: 1.75rem;
+    fill: #4A5568; /* Tailwind's gray-700 */
+  }
+  
+  .doctor-info {
+    display: block;
+    border-left: 1px solid #D1D5DB; /* Tailwind's gray-300 */
+    margin-left: 0.75rem;
+    padding-left: 0.75rem;
+    gap: 0rem; /* Espacio entre los elementos de la columna */
+
+  }
+  
+  .doctor-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem; /* Espacio entre los elementos de la columna */
+  }
+  
+  .doctor-name-text {
+    color: #4A5568; /* Tailwind's gray-600 */
+    font-weight: 600;
+    top: 2%;
+    font-size: 0.875rem; /* Tailwind's text-sm */
+    gap: 0rem; /* Espacio entre los elementos de la columna */
+
+  }
+  
+  .doctor-specialty-text {
+    background-clip: text;
+    text-fill-color: transparent;
+    background: linear-gradient(to left, #f7f7f7, #fcfcff);
+    font-size: 1.125rem; /* Tailwind's text-lg */
+    font-weight: 700;
+    gap: 0rem; /* Espacio entre los elementos de la columna */
+
+  }
+  
+  .clinic-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    gap: 0rem; /* Espacio entre los elementos de la columna */
+  }
+  
+  .clinic-info p {
+    font-size: 0.75rem; /* Tailwind's text-xs */
+    margin: 0; /* Elimina el margen predeterminado */
+  }
+  
+  .clinic-name, .clinic-address {
+    color: #4A5568; /* Tailwind's gray-600 */
+  }
+  

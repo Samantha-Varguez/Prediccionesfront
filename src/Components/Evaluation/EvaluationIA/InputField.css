@@ -1,0 +1,63 @@
+.input__container {
+    position: absolute; /* Fijo en la pantalla */
+    bottom: -30px; /* En la parte inferior */
+    top: 85%; /* Fijo desde la parte superior, con 'px' */
+
+    max-width: 900px; /* Aumentar el ancho */
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px; /* Aumentar el padding */
+    border-radius: 20px;
+    overflow-y: auto; /* Asegura el scroll vertical */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Centrado horizontalmente */
+    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+    width: calc(100% - 40px); /* Para que se adapte al tamaño de la pantalla */
+}
+
+.input__container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(25px);
+    border-radius: 20px;
+    background-color: #99d1ff; /* Color azul claro */
+    background-image: radial-gradient(at 47% 69%, hsla(222,62%,75%,1) 0px, transparent 50%),
+                      radial-gradient(at 9% 32%, rgb(76, 207, 230) 0px, transparent 50%);
+}
+
+.input__label {
+    display: block;
+    margin-left: 0.4em;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.2em; /* Aumentar el tamaño de fuente */
+    font-weight: bold;
+}
+
+.input__description {
+    font-size: 0.8em; /* Aumentar el tamaño de fuente */
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7); /* Aumentar la opacidad del texto */
+}
+
+.input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1em; /* Aumentar el padding */
+    border-radius: 20px;
+    background: #e0f0ff; /* Fondo azul claro */
+    transition: background 300ms, color 300ms;
+}
+
+.input:hover, .input:focus {
+    background: #99c0ff; /* Fondo azul más oscuro */
+    color: #fff;
+}

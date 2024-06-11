@@ -1,0 +1,106 @@
+.MultipleSelectionList {
+  position: absolute; /* Para permitir el uso de top y left */
+  width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(4, 114, 105, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  top: 26%;
+  left: 52%; /* Ajusta este valor para moverlo más a la derecha */
+  border: 1px solid rgba(2, 238, 255, 0.18);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.list {
+  width: 100%;
+  height: 150px;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.SelectedOptions {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.SelectedOptions ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bubble {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.iphone-error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 3, 3);
+  color: rgb(255, 251, 251);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999; /* Para que esté por encima de otros elementos */
+  max-width: 100%; /* Para que no sea demasiado ancho en pantallas grandes */
+}
+
+.bubble span {
+  margin-right: 10px;
+}
+
+.bubble button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.confirmar {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.guardar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.guardar:hover {
+  background-color: #0056b3;
+}
